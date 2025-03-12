@@ -1,75 +1,230 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站</title>
+    <title>Jot's Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
         }
-        header {
-            background-color: #4CAF50;
-            color: white;
+        .header {
+            text-align: left;
             padding: 20px;
-            text-align: center;
+            background-color: #f0f0f0;
         }
-        main {
+        .content {
             padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
         }
-        h1 {
-            margin: 0;
+        .content p {
+            text-align: left;
+            margin: 20px 0;
         }
-        .pdf-container {
-            margin-top: 20px;
-            border: 1px solid #ddd;
-            background-color: white;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .pdf-container embed {
-            width: 100%;
-            height: 600px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        .content img {
+            display: block;
+            margin: 20px auto;
+            max-width: 50%;
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>欢迎来到我的个人网站</h1>
-        <p>这是一个简单的 GitHub Pages 示例</p>
-    </header>
+    <div class="header">
+        <h1>云计算实验三：个人博客搭建</h1>
+    </div>
+    <div class="content">
+        <p>1. 创建github仓库：点击New，输入以“github.io”结尾的仓库名并创建</p>
+        <img src="docs/1.png" alt="图片1">
+        <img src="docs/2.png" alt="图片2">
+        <p>2. 进入仓库，在Settings中选择Pages，选择网页对应的branch（这里选择了main分支）</p>
+        <img src="docs/3.png" alt="图片3">
+        <p>3. 在仓库中创建对应的网页文件：index.html以及其他资源（图片等），根据个人喜好进行网页的设计</p>
+        <img src="docs/4.png" alt="图片4">
+        <p>4. 访问网页https://jot0814.github.io/jot.github.io/，或者在仓库的Settings/Pages中点击Visit site</p>
+        <img src="docs/5.png" alt="图片5">
+    </div>
+</body>
+</html> -->
 
-    <main>
-        <h2>我的简历</h2>
-        <p>以下是我的简历 PDF 文件：</p>
 
-        <!-- 嵌入 PDF 文件 -->
-        <div class="pdf-container">
-            <embed src="docs/202200130260_张汶煜_实验三.pdf" type="application/pdf" width="100%" height="600px">
+<!-- <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jot's Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .header {
+            text-align: left;
+            padding: 20px;
+            background-color: #f0f0f0;
+            width: 100%;
+        }
+        .sidebar {
+            width: 200px;
+            padding: 20px;
+            background-color: #f8f8f8;
+            position: fixed;
+            height: 100%;
+            overflow-y: auto;
+        }
+        .sidebar a {
+            display: block;
+            margin: 10px 0;
+            color: #333;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            color: #007bff;
+        }
+        .content {
+            margin-left: 240px; /* 侧边栏宽度 + 边距 */
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .content p {
+            text-align: left;
+            margin: 20px 0;
+        }
+        .content img {
+            display: block;
+            margin: 20px auto;
+            max-width: 50%;
+            height: auto;
+        }
+        .section {
+            margin-top: 40px; /* 为每个部分增加间距 */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>云计算实验三：个人博客搭建</h1>
+    </div>
+    <div class="sidebar">
+        <h3>目录</h3>
+        <a href="#section1">1. 创建github仓库</a>
+        <a href="#section2">2. 设置Pages</a>
+        <a href="#section3">3. 创建网页文件</a>
+        <a href="#section4">4. 访问网页</a>
+    </div>
+    
+    <div class="content">
+        <div id="section1" class="section">
+            <p>1. 创建github仓库：点击New，输入以“github.io”结尾的仓库名并创建</p>
+            <img src="docs/1.png" alt="图片1">
+            <img src="docs/2.png" alt="图片2">
         </div>
-
-        <!-- 如果浏览器不支持嵌入，显示下载链接 -->
-        <p style="text-align: center;">
-            如果无法显示 PDF 文件，请 <a href="docs/202200130260_张汶煜_实验三.[df" target="_blank">点击这里下载</a>。
-        </p>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 我的个人网站. 保留所有权利。</p>
-    </footer>
+        <div id="section2" class="section">
+            <p>2. 进入仓库，在Settings中选择Pages，选择网页对应的branch（这里选择了main分支）</p>
+            <img src="docs/3.png" alt="图片3">
+        </div>
+        <div id="section3" class="section">
+            <p>3. 在仓库中创建对应的网页文件：index.html以及其他资源（图片等），根据个人喜好进行网页的设计</p>
+            <img src="docs/4.png" alt="图片4">
+        </div>
+        <div id="section4" class="section">
+            <p>4. 访问网页https://jot0814.github.io/jot.github.io/，或者在仓库的Settings/Pages中点击Visit site</p>
+            <img src="docs/5.png" alt="图片5">
+        </div>
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jot's Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            text-align: left;
+            padding: 20px;
+            background-color: #f0f0f0;
+            width: 100%;
+        }
+        .container {
+            display: flex;
+            margin-top: 20px;
+        }
+        .sidebar {
+            width: 300px;
+            padding: 20px;
+            background-color: #f8f8f8;
+            margin-right: 20px;
+        }
+        .sidebar a {
+            display: block;
+            margin: 20px 0;
+            color: #333;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            color: #007bff;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .content p {
+            text-align: left;
+            margin: 20px 0;
+        }
+        .content img {
+            display: block;
+            margin: 20px auto;
+            max-width: 50%;
+            height: auto;
+        }
+        .section {
+            margin-top: 40px; /* 为每个部分增加间距 */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>云计算实验三：个人博客搭建</h1>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h3>目录</h3>
+            <a href="#section1">1. 创建github仓库</a>
+            <a href="#section2">2. 设置Pages</a>
+            <a href="#section3">3. 创建网页文件</a>
+            <a href="#section4">4. 访问网页</a>
+        </div>
+        <div class="content">
+            <div id="section1" class="section">
+                <p>1. 创建github仓库：点击New，输入以“github.io”结尾的仓库名并创建</p>
+                <img src="docs/1.png" alt="图片1">
+                <img src="docs/2.png" alt="图片2">
+            </div>
+            <div id="section2" class="section">
+                <p>2. 进入仓库，在Settings中选择Pages，选择网页对应的branch（这里选择了main分支）</p>
+                <img src="docs/3.png" alt="图片3">
+            </div>
+            <div id="section3" class="section">
+                <p>3. 在仓库中创建对应的网页文件：index.html以及其他资源（图片等），根据个人喜好进行网页的设计</p>
+                <img src="docs/4.png" alt="图片4">
+            </div>
+            <div id="section4" class="section">
+                <p>4. 访问网页https://jot0814.github.io/jot.github.io/，或者在仓库的Settings/Pages中点击Visit site</p>
+                <img src="docs/5.png" alt="图片5">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
