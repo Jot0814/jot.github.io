@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            margin: 0;
+        }
+        .pdf-container {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .pdf-container embed {
+            width: 100%;
+            height: 600px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>欢迎来到我的个人网站</h1>
+        <p>这是一个简单的 GitHub Pages 示例</p>
+    </header>
+
+    <main>
+        <h2>我的简历</h2>
+        <p>以下是我的简历 PDF 文件：</p>
+
+        <!-- 嵌入 PDF 文件 -->
+        <div class="pdf-container">
+            <embed src="docs/resume.pdf" type="application/pdf" width="100%" height="600px">
+        </div>
+
+        <!-- 如果浏览器不支持嵌入，显示下载链接 -->
+        <p style="text-align: center;">
+            如果无法显示 PDF 文件，请 <a href="docs/resume.pdf" target="_blank">点击这里下载</a>。
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 我的个人网站. 保留所有权利。</p>
+    </footer>
+</body>
+</html>
